@@ -7,12 +7,26 @@ module.exports = {
   entry: {
     header: './modules/header/header.js',
     body: './modules/body/body.js',
-    footer: './modules/footer/footer.js',
+    footer: './modules/footer/footer.js'
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'public')
   },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
+    compress: true,
+    port: 8564,
+   // open: true,
+  },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: './modules/index.html'
+    })
+  ],
   module: {
     rules: [
       {
@@ -55,22 +69,11 @@ module.exports = {
       },
     ],
   },
-  devServer: {
-    static: path.join(__dirname, 'public'),
-    port: 8564,
-    open: false,
-    hot: true,
-  },
-  plugins: [
-    new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      title: 'Holberton Dashboard',
-    }),
-  ],
-  devtool: 'inline-source-map',
   optimization: {
+    minimize: true,
     splitChunks: {
       chunks: 'all',
     },
   },
-};
+  devtool: 'inline-source-map',
+}; 
