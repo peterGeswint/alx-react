@@ -8,27 +8,27 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 10vh;
+  background-color: white;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(211, 108, 108);;
 }
 
 .App-body {
-  font-size: large;
-  color: #333;
-  margin: 20px;
+  font-size: calc(8px + 2vmin);
 }
 
 .App-footer {
-  background-color: #282c34;
-  color: white;
-  padding: 10px;
+  font-size: calc(8px + 2vmin);
   position: fixed;
-  width: 100%;
   bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: white;
+  text-align: center;
 }
+
