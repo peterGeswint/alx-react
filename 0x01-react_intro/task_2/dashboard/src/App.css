@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: white;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(211, 108, 108);;
+}
+
+.App-body {
+  font-size: calc(8px + 2vmin);
+}
+
+.App-footer {
+  font-size: calc(8px + 2vmin);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: white;
+  text-align: center;
+}
+
+form {
+  margin: 20px;
+}
+
+label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+input{
+  margin-bottom: 15px;
+  padding: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+button{
+  padding: 10px 20px;
+  background-color: #e1354b;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #d12a42;
+}
+
