@@ -1,5 +1,3 @@
-// Notifications.js
-
 import React from 'react';
 import './Notifications.css';
 import closeIcon from './close-icon.png';
@@ -12,12 +10,23 @@ function Notifications() {
 
     return (
         <div className="Notifications">
-            <button 
-                style={{ position: 'absolute', right: '10px', top: '10px' }}
+            <button
+                style={{
+                    position: 'absolute',
+                    right: '10px',
+                    top: '10px',
+                    background: 'transparent',
+                    border: 'none',
+                    cursor: 'pointer',
+                }}
                 aria-label="Close"
                 onClick={handleButtonClick}
             >
-                <img src={closeIcon} alt="close icon" />
+                <img
+                    src={closeIcon}
+                    alt="Close notification"
+                    style={{ width: '10px', height: '10px' }}
+                />
             </button>
             <p>Here is the list of notifications</p>
             <ul>
