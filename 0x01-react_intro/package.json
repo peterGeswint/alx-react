@@ -1,16 +1,19 @@
 {
-  "devDependencies": {
-    "jest": "^29.7.0"
+  "name": "dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://peterGeswint.github.io/alx-react", 
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1"
   },
   "scripts": {
-    "test": "jest"
-  },
-  "dependencies": {
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.8"
-  },
-  
-  "jest": {
-  "setupFilesAfterEnv": ["<rootDir>/src/setupTests.js"]
-}
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
 }
